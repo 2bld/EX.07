@@ -1,0 +1,7 @@
+palavras=["casa", "computador", "sol", "programacao", "livro"]
+maximo=max(palavras, key=len)
+minimo=min(palavras, key=len)
+
+# Exibe os resultados
+print("Palavra mais longa:", maximo)
+print("Palavra mais curta:", minimo)
