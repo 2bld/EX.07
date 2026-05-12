@@ -1,0 +1,4 @@
+import random
+print("Gerando números aleatórios")
+lista = [random.randint(1,999) for i in range(10)]
+print(lista)
