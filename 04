@@ -1,0 +1,6 @@
+print("Lista de 1 a 10")
+lista = list(range(1,11))
+print(lista)
+print("Lista reversa")
+lista.reverse()
+print(lista)
