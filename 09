@@ -1,0 +1,24 @@
+import random
+from time import sleep
+
+alfabeto = [
+    'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
+    'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't',
+    'u', 'v', 'w', 'x', 'y', 'z'
+]
+
+print(alfabeto)
+
+random.shuffle(alfabeto)
+
+print("Embaralhando...")
+sleep(3)
+letra = random.choice(alfabeto)
+
+posicao = int(input(f"Qual é a posição da letra '{letra}'? "))
+
+if alfabeto[posicao] == letra:
+    print("Você acertou!")
+else:
+    print("Você errou!")
+    print("A posição correta era:", alfabeto.index(letra))
