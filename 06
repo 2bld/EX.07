@@ -1,0 +1,17 @@
+pares = []
+
+for i in range(1, 11):
+    if i % 2 == 0:
+        pares.append(i)
+
+impares = []
+
+for i in range(1, 11):
+    if i % 2 != 0:
+        impares.append(i)
+
+lista_final = pares + impares
+lista_final.sort()
+print("Lista de pares:", pares)
+print("Lista de ímpares:", impares)
+print("Lista final:", lista_final)
